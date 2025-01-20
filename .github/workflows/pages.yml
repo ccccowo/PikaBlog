@@ -32,7 +32,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-
       - name: Install Dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: |
+          pnpm config set registry https://registry.npmmirror.com
+          pnpm install --no-frozen-lockfile
       - name: Clean
         run: pnpm run clean
       - name: Build
