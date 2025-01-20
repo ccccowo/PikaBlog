@@ -34,6 +34,8 @@ jobs:
       - name: Install Dependencies
         run: |
           pnpm config set registry https://registry.npmmirror.com
+          pnpm config list
+          rm -rf node_modules
           pnpm install --no-frozen-lockfile
       - name: Clean
         run: pnpm run clean
