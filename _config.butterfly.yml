@@ -68,7 +68,7 @@ avatar:
 disable_top_img: false
 
 # 首页banner图片
-index_img: /PikaBlog/img/home.jpg
+index_img: ./img/home.jpg
 
 # 如果没有设置banner，将显示默认的top_img
 default_top_img: 
@@ -189,18 +189,29 @@ index_post_content:
   length: 500
 
 # --------------------------------------
-# Post Settings
+# 文章设置
 # --------------------------------------
 
+# 文章目录
 toc:
+  # 是否启用目录
+  enable: true
+  # 是否在文章中启用目录
   post: true
+  # 是否在页面中启用目录
   page: false
+  # 是否显示目录编号
   number: true
+  # 是否展开目录
   expand: false
-  # 仅对文章
+  # 最大目录深度
+  max_depth: 6
+  # 简单模式
   style_simple: false
+  # 滚动百分比
   scroll_percent: true
 
+# 文章版权
 post_copyright:
   enable: true
   decode: false

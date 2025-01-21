@@ -18,26 +18,31 @@ root: /PikaBlog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: true # 设置为 false 以删除结尾的 'index.html' 从永久链接
+  trailing_html: true # 设置为 false 以删除结尾的 '.html' 从永久链接
 
-# Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
+# 目录
+source_dir: source # 源文件目录
+public_dir: public # 公共文件目录
+tag_dir: tags # 标签目录
+archive_dir: archives # 归档目录
+category_dir: categories # 分类目录
+code_dir: downloads/code # 代码下载目录
+i18n_dir: :lang # 国际化目录
 skip_render:
+# 首页设置
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
 
-# Writing
-new_post_name: :title.md # File name of new posts
+# 写作
+new_post_name: :title.md # 新文章文件名
 default_layout: post
-titlecase: false # Transform title into titlecase
+titlecase: false # 将标题转换为标题大小写
 external_link:
-  enable: true # Open external links in new tab
-  field: site # Apply to the whole site
+  enable: true # 在新标签页中打开外部链接
+  field: site # 应用到整个站点
   exclude: ''
 filename_case: 0
 render_drafts: false
