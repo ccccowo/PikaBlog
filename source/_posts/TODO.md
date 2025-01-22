@@ -1,5 +1,5 @@
 ---
-title: 
+title: TODO
 tags: 
 date: 2025-01-22
 categories: 
@@ -15,6 +15,9 @@ share: false
 
 ### 脚手架项目
 
+- [ ] 修改create功能，支持pika create project_name格式
+- [ ] 修改github集成功能，独立成命令 pika github init
+- [ ] 添加github仓库删除功能
 - [ ] 添加Tokens存储功能
 - [ ] 发包
 

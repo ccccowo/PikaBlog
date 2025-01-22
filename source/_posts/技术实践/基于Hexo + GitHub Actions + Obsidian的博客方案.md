@@ -1,9 +1,10 @@
 ---
-title: Hexo + Github Actions + Obsidian
+title: 基于Hexo + GitHub Actions + Obsidian的博客方案
 date: 2025-01-22
 categories:
   - 技术实践
-tags: 
+tags:
+  - Obsidian
 share: true
 ---
 
