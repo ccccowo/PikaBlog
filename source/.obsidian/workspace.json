@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/前端工程化/CICD.md",
+                "file": "_posts/前端工程化/CICD.md",
                 "mode": "source",
                 "source": false
               },
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 223.5
+    "width": 312.5
   },
   "right": {
     "id": "21e21940426322c9",
@@ -148,7 +148,7 @@
               "type": "calendar",
               "state": {},
               "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "title": "插件不再活动"
             }
           }
         ]
@@ -171,31 +171,51 @@
   },
   "active": "1fbeb7035fb28bf7",
   "lastOpenFiles": [
-    "source/_posts/皮卡的使用Notes/Git使用教程.md",
-    "source/_posts/前端工程化/CICD.md",
-    "source/_posts/皮卡的使用Notes/Git常用命令.md",
+    "_posts/前端工程化/带你入门Rust前端工具链.md",
+    "_posts/前端工程化/「脚手架开发2」搭建一个monorepo风格的脚手架工程.md",
+    "_posts/前端工程化/「脚手架开发1」技术实现以及使用的包.md",
+    "_posts/皮卡的使用Notes/Obsidian使用手册.md",
+    "_posts/皮卡的使用Notes/markdown语法.md",
+    "_posts/皮卡的使用Notes/Git使用教程.md",
+    "_posts/皮卡的使用Notes/Git常用命令.md",
+    "_posts/面试准备/面试JS手写题汇总.md",
+    "_posts/技术视野/M1.md",
+    "_posts/技术实践/基于Hexo + GitHub Actions + Obsidian的博客方案.md",
+    "_posts/TODO.md",
+    "_posts/前端工程化/CICD.md",
+    "_posts/技术实践/Test.md",
+    "template/模版文件.md",
+    "img/posts/Pasted image 20250122162709.png",
+    "img/posts/Pasted image 20250122162637.png",
+    "img/posts/Pasted image 20250122160236.png",
+    "().md",
+    "img/posts/Pasted image 20250122144611.png",
+    "img/Pasted image 20250122144547.png",
+    "source/imgs/Pasted image 20250122143145.png",
+    "source/imgs/Pasted image 20250122143054.png",
+    "source/imgs/Pasted image 20250122142947.png",
+    "source/imgs",
+    "source/img/posts/Pasted image 20250122142706.png",
+    "source/img/posts/Pasted image 20250122142554.png",
+    "source/_posts/技术实践/Hexo + Github Actions + Obsidian.md",
+    "source/images",
     "source/_posts/皮卡的使用Notes/Obsidian使用手册.md",
+    "source/_posts/皮卡的使用Notes/Git使用教程.md",
+    "source/_posts/皮卡的使用Notes/Git常用命令.md",
     "source/_posts/皮卡的使用Notes/markdown语法.md",
+    "source/_private/TODO.md",
+    "source/about/index.md",
+    "source/_private/未命名",
+    "source/_private",
+    "source/_posts/前端工程化/CICD.md",
     "source/_posts/前端工程化/「脚手架开发2」搭建一个monorepo风格的脚手架工程.md",
     "source/_posts/前端工程化/「脚手架开发1」技术实现以及使用的包.md",
-    "source/_posts/前端工程化/带你入门Rust前端工具链.md",
-    "source/_posts/技术实践/Hexo + Github Actions + Obsidian.md",
-    "source/_posts/个人项目/脚手架开发.md",
-    "source/_posts/个人项目",
-    "source/_posts/技术视野/M1.md",
+    "source/_posts/面试准备/面试JS手写题汇总.md",
+    "node_modules/@babel",
+    "node_modules/@csstools",
+    "node_modules/@asamuzakjp",
+    "node_modules/@types",
     "source/_posts/技术实践",
-    "source/_posts/面试/面试JS手写题汇总.md",
-    "source/img/posts/Pasted image 20250121202040.png",
-    "source/img/posts/Pasted image 20250121202001.png",
-    "source/template/模版文件.md",
-    "source/img/posts/Pasted image 20250121201910.png",
-    "source/img/posts/Pasted image 20250121201742.png",
-    "source/img/blog/home.jpg",
-    "source/img/blog",
-    "source/img/posts",
-    "source/未命名",
-    "Excalidraw/Drawing 2025-01-21 20.02.37.excalidraw.md",
-    "Excalidraw",
-    "source/template"
+    "source/_posts/个人项目"
   ]
 }

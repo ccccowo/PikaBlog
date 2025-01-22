@@ -2,9 +2,10 @@
 title: Obsidian使用手册
 date: 2025-01-21 19:25
 categories:
-  - 使用教程
+  - 皮卡的使用Notes
 tags:
   - Obsidian
+share: true
 ---
 ### 快捷键 
 可在设置中设置自定义快捷键
@@ -29,12 +30,11 @@ tags:
 
 ### 图片存放
 本地图片会默认存在附件目录根目录中，可在设置中指定附件文件夹
-![[Pasted image 20250121201742.png|456]]
+![[Pasted image 20250121201742.png|500]]
 
 ###  模版
 可在设置中开启模版Template，指定模版存放的文件夹
-![[Pasted image 20250121201910.png|456]]
-创建模版文件
-![[Pasted image 20250121202001.png|390]]
+![[Pasted image 20250121201910.png|500]]
+创建模版文件![[Pasted image 20250121202001.png|500]]
 点击左侧插入模版使用
-![[Pasted image 20250121202040.png|356]]
+![[Pasted image 20250121202040.png|400]]

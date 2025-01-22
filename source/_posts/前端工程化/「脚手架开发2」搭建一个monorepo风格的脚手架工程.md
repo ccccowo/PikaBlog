@@ -1,10 +1,12 @@
 ---
-title: 「脚手架开发」搭建一个monorepo风格的脚手架工程
+title: 「脚手架开发2」搭建一个monorepo风格的脚手架工程
 date: 2025-01-20 19:32:00
 categories:
   - 前端工程化
 tags:
   - 脚手架
+share: 
+hidden: true
 ---
 
 # 一、前言

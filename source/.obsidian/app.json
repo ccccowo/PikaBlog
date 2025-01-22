@@ -1,0 +1,10 @@
+{
+  "attachmentFolderPath": "img/posts",
+  "useMarkdownLinks": true,
+  "newLinkFormat": "absolute",
+  "userIgnoreFilters": [
+    "node_modules/",
+    "public/"
+  ],
+  "newFileLocation": "root"
+}
