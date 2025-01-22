@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/前端工程化/CICD.md",
+                "file": "_posts/技术实践/基于Hexo + GitHub Actions + Obsidian的博客方案.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CICD"
+              "title": "基于Hexo + GitHub Actions + Obsidian的博客方案"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "1fbeb7035fb28bf7",
   "lastOpenFiles": [
+    "_posts/前端工程化/CICD.md",
     "_posts/前端工程化/带你入门Rust前端工具链.md",
     "_posts/前端工程化/「脚手架开发2」搭建一个monorepo风格的脚手架工程.md",
     "_posts/前端工程化/「脚手架开发1」技术实现以及使用的包.md",
@@ -182,7 +183,6 @@
     "_posts/技术视野/M1.md",
     "_posts/技术实践/基于Hexo + GitHub Actions + Obsidian的博客方案.md",
     "_posts/TODO.md",
-    "_posts/前端工程化/CICD.md",
     "_posts/技术实践/Test.md",
     "template/模版文件.md",
     "img/posts/Pasted image 20250122162709.png",
