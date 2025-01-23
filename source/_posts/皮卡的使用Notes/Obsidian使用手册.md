@@ -28,6 +28,7 @@ share: true
 - Clear Unuse Images：定期清理附件库中未被引用的图片
 - Mouserwheel Image Zoom：通过鼠标滚轮调节图片大小
 - Auto Link Title：处理粘贴在文档上的链接
+- Advanced Tables：表格插件
 
 ### 本地图片存放
 本地图片会默认存在附件目录根目录中，可在设置中指定附件文件夹
