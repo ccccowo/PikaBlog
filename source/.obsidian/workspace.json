@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/皮卡的使用Notes/Obsidian使用手册.md",
+                "file": "_posts/技术实践/基于Hexo + GitHub Actions + Obsidian的博客方案.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Obsidian使用手册"
+              "title": "基于Hexo + GitHub Actions + Obsidian的博客方案"
             }
           }
         ],
@@ -176,13 +176,13 @@
   },
   "active": "eac385c834bc5184",
   "lastOpenFiles": [
+    "_posts/皮卡的使用Notes/Obsidian使用手册.md",
     "_posts/技术实践/基于Hexo + GitHub Actions + Obsidian的博客方案.md",
     "_posts/技术视野/M1.md",
     "_posts/面试准备/面试JS手写题汇总.md",
     "_posts/皮卡的使用Notes/Git常用命令.md",
     "_posts/皮卡的使用Notes/markdown语法.md",
     "_posts/皮卡的使用Notes/Git使用教程.md",
-    "_posts/皮卡的使用Notes/Obsidian使用手册.md",
     "_posts/前端工程化/「脚手架开发1」技术实现以及使用的包.md",
     "_posts/前端工程化/「脚手架开发2」搭建一个monorepo风格的脚手架工程.md",
     "_posts/个人项目/个人脚手架介绍.md",

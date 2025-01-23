@@ -139,7 +139,7 @@ share: true  # 或 false
 可以将该字段添加在模版中
 
 在 Hexo 的构建脚本中，可以通过解析这些 YAML 标签来决定是否将某篇笔记生成为博客文章
-如果有主题，在当前主题的scrits文件夹下 (如果没有就创建一个)创建 `share-filter.js`文件，在其中添加过滤逻辑
+如果有主题，在根目录scrits文件夹下 (如果没有就创建一个)创建 `share-filter.js`文件，在其中添加过滤逻辑
 
 ```share-filter.js
 'use strict';
