@@ -68,7 +68,7 @@ avatar:
 disable_top_img: false
 
 # 首页banner图片
-index_img: ./img/home.jpg
+index_img: ./img/blog/home.jpg
 
 # 如果没有设置banner，将显示默认的top_img
 default_top_img: 
