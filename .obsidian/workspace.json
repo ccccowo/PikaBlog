@@ -148,7 +148,7 @@
               "type": "calendar",
               "state": {},
               "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "title": "插件不再活动"
             }
           }
         ]
@@ -165,15 +165,14 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "command-palette:打开命令面板": false
     }
   },
   "active": "1fbeb7035fb28bf7",
   "lastOpenFiles": [
+    "source/_posts/技术实践/基于Hexo + GitHub Actions + Obsidian的博客方案.md",
     "source/_posts/TODO.md",
     "source/_posts/个人项目/个人脚手架介绍.md",
-    "source/_posts/技术实践/基于Hexo + GitHub Actions + Obsidian的博客方案.md",
     "source/_posts/技术实践/Hexo + Github Actions + Obsidian.md",
     "source/link/index.md",
     "source/img/posts/Pasted image 20250122162709.png",
