@@ -1,7 +1,7 @@
 [
-  "calendar",
-  "obsidian-excalidraw-plugin",
   "oz-clear-unused-images",
   "copy-url-in-preview",
-  "mousewheel-image-zoom"
+  "mousewheel-image-zoom",
+  "obsidian-auto-link-title",
+  "obsidian-image-auto-upload-plugin"
 ]

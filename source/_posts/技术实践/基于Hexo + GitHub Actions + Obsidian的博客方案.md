@@ -126,6 +126,7 @@ Obsidian是一款本地存储的markdown语法的笔记，以仓库的角度来�
 Obsidian的基础配置请查看[Obsidian使用手册](_posts/皮卡的使用Notes/Obsidian使用手册.md)
 
 #### 笔记是否分享
+
 我们采用以下方法来增加「控制笔记是否分享」的功能：
 
 在 Obsidian 的笔记中，通过 `YAML Frontmatter` 添加自定义字段来标记笔记是否分享
@@ -138,7 +139,7 @@ share: true  # 或 false
 可以将该字段添加在模版中
 
 在 Hexo 的构建脚本中，可以通过解析这些 YAML 标签来决定是否将某篇笔记生成为博客文章
-如果有主题，在当前主题的scrits文件夹下 (如果没有就创建一个)创建 `share-filter.js`文件，在其中添加过滤逻辑
+如果有主题，在根目录scrits文件夹下 (如果没有就创建一个)创建 `share-filter.js`文件，在其中添加过滤逻辑
 
 ```share-filter.js
 'use strict';
@@ -213,9 +214,14 @@ Obsidian 中的图片默认使用的是Wiki链接
 ```
 ![](images/Hexo-Obsidian：解决图片问题)
 ```
-所以就导致图片不能在Obsidian和hexo中同时显示
+所以就导致图片不能在Obsidian和hexo中同时显示,针对这个问题我们有两种方式
 
-解决方法:
+第一种是使用图床，将我们博客中的图片全都上传云端存储起来，博客图片为这些图片的地址，这样无论md文件在哪图片都可以正常显示，详细操作方式可见
+[Site Unreachable](https://zhuanlan.zhihu.com/p/689603478)
+PicGo腾讯云COS配置可查看：[对象存储 使用 PicGo+Typora+COS 搭建图床服务-实践教程-文档中心-腾讯云](https://cloud.tencent.cn/document/product/436/74373)
+
+还有一种方式如下，还是在本地存储图片
+解决步骤:
 1. 注意我们的根文件夹是`source`
 2. 打开设置中的文件与链接
 3. 将内部链接类型修改为「基于仓库根目录的绝对路径」
