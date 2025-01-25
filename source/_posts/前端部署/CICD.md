@@ -18,7 +18,8 @@ CD，Continuous Deployment，持续部署：是在持续集成的基础上，将
 **<font style="color:#2F4BDA;">每当我们将前端代码更新并且PUSH到仓库后，CICD将会拉取仓库代码并自动部署到服务器</font>**
 
 <h4 id="DB8fx">1.基础概念与术语：</h4>   
-- Runner：用来执行CI/CD的构建服务器+ workflow/pipeline：CI/CD的工作流
+- Runner：用来执行CI/CD的构建服务器
+- workflow/pipeline：CI/CD的工作流
 + job：任务，比如构建、测试和部署，每个workflow/pipeline由多个job组成
 - 容器化技术：容器化技术是一种软件开发方法，它将应用程序及其依赖打包到一个独立的容器中，以便在不同的环境中一致地运行。容器化技术的核心思想是将应用程序及其运行环境封装在一起，确保应用程序在开发、测试和生产环境中具有一致的行为
 - 镜像：在容器化技术中，镜像是一个只读的模版，包含了运行一个容器所需的所有内容，包括代码、运行时、系统工具、系统库等。镜像是容器运行的基础，通过镜像可以创建一个或多个容器实例
@@ -62,9 +63,72 @@ CD，Continuous Deployment，持续部署：是在持续集成的基础上，将
 最重要的是，CI 还可对部署及其后的一系列操作进行检查，如端对端测试、性能测试以及容器扫描等
 
 <h3 id="K4Y5Z">三、CI中的缓存</h3>
+在开发环境中，当我们使用webpack5进行构建时，如果使用了filesystemcache，因为在磁盘中含有缓存（node_modules/.cache），二次构建往往比以此构建快速十几倍
+而在CICD中，这些都失去了意义，因为CICD每次Job都相当于新建了一个目录，每次构建都相当于是首次构建
+但是CI提供了一些缓存机制可以讲一些资源进行缓存
 
-<h3 id="i3Y5s">四、CI/CD工具</h3>
+如果可以对node_modules进行缓存，有两个好处
+- 假设没有新的package需要安装，则无需再次安装
+- 假设存在新的package需要安装，仅仅会安装变动的package
 
+在Github Actions中，可以通过Cache Action来进行缓存
+- path：指定需要缓存的目录
+- key：根据key进行缓存，如果存在相同的key，则为命中。在Github Actions中可以利用函数hashFiles针对文件计算其hash值
+
+如果不想缓存node_modules，可以缓存npm/yarn/pnpm全局缓存目录
+### 四、CI中的环境变量
+CI作为与Git集成的工具，其中注入了诸多与Git相关的环境变量
+![](img/posts/Pasted%20image%2020250125234044.png)
+在Github Actions中，可以通过env设置环境变量
+![](img/posts/Pasted%20image%2020250125234141.png)
+不同的CI产品会在构建服务器中自动注入环境变量
+而测试、构建等工具均会根据环境变量判断当前是否在CI环境中，如果在则执行更为严格的校验
+
+#### 构建功能分支测试环境
+
+从项目开发到上线，一般划分为三个环境
+1. 本地环境：面向对象主要是开发者
+2. 测试环境：本地业务迭代开发结束并交付给测试进行功能测试的环境，面向对象主要是测试人员
+3. 生产环境：线上供用户使用的环境
+
+我们在构建服务器中，可通过环境变量  `CI_COMMIT_REF_SLUG` 获取到当前仓库的当前分支，基于分支名称进行功能分支环境部署
+
+1. 借用现有的CICD服务获取到当前分支信息
+2. 借用Doker快速部署前端或者后端，根据分支信息启动不同的服务，根据Docker启动服务并配置标签
+3. 根据容器的标签与当前Git分支对前端后端设置不同的域名
+
+以下是一个基于github actions的分支部署的简单示例
+```
+# 为了试验，此处作为单独的 Workflow，在实际工作中可 Install -> Lint、Test -> Preview 串行检验
+name: Preview
+# 执行 CI 的时机: 当 git push 到 feature-* 分支时
+on: 
+	push: 
+		branches: 
+			- feature-*
+# 执行所有的 jobs
+jobs：
+	preview：
+		# 该 Job 在自建的 Runner 中执行 
+		runs-on: self-hosted 
+		environment:
+			# 获取 CICD 中的变量: Context 
+			name: preview/${{ github.ref_name }} 
+			url: https://${{ github.ref_name }}.cra.shanyue.tech
+		steps：
+		# 切出代码，使用该 Action 将可以拉取最新代码 
+			- uses: actions/checkout@v2 
+			- name: Preview 
+				- run: | 
+				- cat preview.docker-compose.yaml | envsubst > 
+				- docker-compose.yaml 
+				- docker-compose up --build -d cra-preview-${COMMIT_REF_NAME}
+				env：
+				COMMIT_REF_NAME: ${{ github.ref_name }}
+```
+
+
+### 五、CICD工具
 - Jenkins：开源免费，社区活跃，但是配置较复杂，需要自己搭建服务器
 + GitLab CI：与GitLab深度集成，配置简单，但是插件生态不如Jenkins
 + GitHub Actions：与GitHub深度集成，社区活跃，配置灵活

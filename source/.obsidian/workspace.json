@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/杂七杂八/MTO：最佳目标达成策略.md",
+                "file": "_posts/TODO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MTO：最佳目标达成策略"
+              "title": "TODO"
+            }
+          },
+          {
+            "id": "4de9ca9cb3c03f1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/前端工程化/「脚手架开发1」技术实现以及使用的包.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "「脚手架开发1」技术实现以及使用的包"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 312.5
+    "width": 200
   },
   "right": {
     "id": "21e21940426322c9",
@@ -157,7 +172,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,53 +187,54 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9a1e422c63e82323",
+  "active": "4de9ca9cb3c03f1d",
   "lastOpenFiles": [
-    "_posts/皮卡的使用Notes/Obsidian使用手册.md",
-    "_posts/杂七杂八/好物推荐！.md",
-    "_posts/技术实践/基于Hexo + GitHub Actions + Obsidian的博客方案.md",
-    "_posts/杂七杂八/MTO：最佳目标达成策略.md",
-    "_posts/个人项目/个人脚手架介绍.md",
+    "_posts/前端工程化/「脚手架开发2」搭建一个monorepo风格的脚手架工程.md",
     "_posts/前端工程化/带你入门Rust前端工具链.md",
+    "_posts/前端部署/CICD.md",
+    "_posts/杂七杂八/好物推荐！.md",
+    "_posts/杂七杂八/补考七门科目安排时间.md",
+    "_posts/杂七杂八/MTO：最佳目标达成策略.md",
+    "_posts/技术视野/技术资讯获取途径.md",
+    "_posts/前端部署",
+    "img/posts/Pasted image 20250125234141.png",
+    "img/posts/Pasted image 20250125234044.png",
+    "_posts/技术视野/AI Agent.md",
+    "_posts/技术视野/认识前端打包工具设计哲学.md",
+    "_posts/技术视野/RAG.md",
+    "img/posts/Pasted image 20250125175657.png",
+    "img/posts/Pasted image 20250125175401.png",
+    "img/posts/Pasted image 20250125175141.png",
+    "img/posts/Pasted image 20250125175127.png",
+    "_posts/TODO.md",
+    "_posts/个人项目/RAG技术调研.md",
+    "_posts/个人项目/未命名.canvas",
+    "img/posts/Pasted image 20250124214635.png",
+    "_posts/皮卡的使用Notes/Obsidian使用手册.md",
+    "_posts/技术实践/基于Hexo + GitHub Actions + Obsidian的博客方案.md",
+    "_posts/个人项目/个人脚手架介绍.md",
     "link/index.md",
     "_posts/皮卡的使用Notes/Git使用教程.md",
     "tags/index.md",
-    "_posts/技术视野/AI Agent.md",
     "_posts/前端工程化/「脚手架开发1」技术实现以及使用的包.md",
     "_posts/皮卡的使用Notes/git常用命令.md",
-    "_posts/技术视野/RAG.md",
     "categories/index.md",
     "template/模版文件.md",
-    "_posts/技术视野/技术咨询获取途径.md",
-    "_posts/技术视野/认识前端打包工具设计哲学.md",
     "_posts/杂七杂八",
     "_posts/皮卡的使用Notes/Git常用命令.md",
-    "_posts/前端工程化/CICD.md",
-    "_posts/TODO.md",
     "2024-03-21.md",
     "_posts/面试准备/面试JS手写题汇总.md",
     "_posts/皮卡的使用Notes/markdown语法.md",
-    "_posts/前端工程化/「脚手架开发2」搭建一个monorepo风格的脚手架工程.md",
-    "_posts/技术实践/Test.md",
     "img/posts/Pasted image 20250122162709.png",
     "img/posts/Pasted image 20250122162637.png",
     "img/posts/Pasted image 20250122160236.png",
-    "().md",
-    "img/posts/Pasted image 20250122144611.png",
-    "img/Pasted image 20250122144547.png",
-    "source/imgs/Pasted image 20250122143145.png",
-    "source/imgs/Pasted image 20250122143054.png",
-    "source/imgs/Pasted image 20250122142947.png",
     "source/imgs",
-    "source/img/posts/Pasted image 20250122142706.png",
-    "source/img/posts/Pasted image 20250122142554.png",
     "source/images",
     "source/_private/未命名",
     "source/_private",
     "node_modules/@babel",
     "node_modules/@csstools",
     "node_modules/@asamuzakjp",
-    "node_modules/@types",
-    "source/_posts/技术实践"
+    "node_modules/@types"
   ]
 }
