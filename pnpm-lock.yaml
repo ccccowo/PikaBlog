@@ -39,8 +39,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0
       hexo-renderer-pug:
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^3.0.0
+        version: 3.0.0
       hexo-renderer-stylus:
         specifier: ^2.1.0
         version: 2.1.0
@@ -67,13 +67,13 @@ packages:
     resolution: {integrity: sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/parser@7.26.5':
-    resolution: {integrity: sha512-SRJ4jYmXRqV1/Xc+TIVG84WjHBXKlxO9sHQnA2Pf12QQEAp1LOh6kDzNHXcUnbH1QI0FDoPPVOt+vyUDucxpaw==}
+  '@babel/parser@7.26.7':
+    resolution: {integrity: sha512-kEvgGGgEjRUutvdVvZhbn/BxVt+5VSpwXz1j3WYXQbXDo8KzFOPNG2GQbdAiNq8g6wn1yKk7C/qrke03a84V+w==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
-  '@babel/types@7.26.5':
-    resolution: {integrity: sha512-L6mZmwFDK6Cjh1nRCLXpa6no13ZIioJDz7mdkzHv399pThrTa/k0nUlNaenOeh2kWu/iaOQYElEpKPUswUa9Vg==}
+  '@babel/types@7.26.7':
+    resolution: {integrity: sha512-t8kDRGrKXyp6+tjUh7hw2RLyclsW4TRoRvRHtSyAX9Bb5ldlFh+90YAYY6awRXrlB4G5G2izNeGySpATlFzmOg==}
     engines: {node: '>=6.9.0'}
 
   '@csstools/color-helpers@5.0.1':
@@ -527,8 +527,8 @@ packages:
     resolution: {integrity: sha512-rh9RGX2ijbdXQ7PElniCu7TReucFiO7Apvk/hzDg2t9N4umiz6QmANTR1yGvnQI8Ap/G8QtmsyVeG7313KhTVQ==}
     engines: {node: '>=18'}
 
-  hexo-renderer-pug@2.0.0:
-    resolution: {integrity: sha512-5AJpVmPzAuwB6pqtm/bOfaYjjxyc1Ue9hLvJdJwxib3bzVIVm17QWEiT+nYO4lU5Nn75s5WqHh7jPg03cgTgig==}
+  hexo-renderer-pug@3.0.0:
+    resolution: {integrity: sha512-PmbLx6VkNv+mPLOe97OC4F8iTzTuj665dSYN7bZKArd4M/q7gb2tNs29VGuAOC50i9tvWY2f+tPQimf0GZ9Hyw==}
     engines: {node: '>=12.4.0'}
 
   hexo-renderer-stylus@2.1.0:
@@ -1130,11 +1130,11 @@ snapshots:
 
   '@babel/helper-validator-identifier@7.25.9': {}
 
-  '@babel/parser@7.26.5':
+  '@babel/parser@7.26.7':
     dependencies:
-      '@babel/types': 7.26.5
+      '@babel/types': 7.26.7
 
-  '@babel/types@7.26.5':
+  '@babel/types@7.26.7':
     dependencies:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
@@ -1197,7 +1197,7 @@ snapshots:
 
   babel-walk@3.0.0-canary-5:
     dependencies:
-      '@babel/types': 7.26.5
+      '@babel/types': 7.26.7
 
   balanced-match@1.0.2: {}
 
@@ -1303,8 +1303,8 @@ snapshots:
 
   constantinople@4.0.1:
     dependencies:
-      '@babel/parser': 7.26.5
-      '@babel/types': 7.26.5
+      '@babel/parser': 7.26.7
+      '@babel/types': 7.26.7
 
   cross-spawn@7.0.6:
     dependencies:
@@ -1600,7 +1600,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  hexo-renderer-pug@2.0.0:
+  hexo-renderer-pug@3.0.0:
     dependencies:
       pug: 3.0.3
 
@@ -2232,8 +2232,8 @@ snapshots:
 
   with@7.0.2:
     dependencies:
-      '@babel/parser': 7.26.5
-      '@babel/types': 7.26.5
+      '@babel/parser': 7.26.7
+      '@babel/types': 7.26.7
       assert-never: 1.4.0
       babel-walk: 3.0.0-canary-5
 
